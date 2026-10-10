@@ -1,5 +1,10 @@
-import { defineAgent } from "eve";
+import { createGroq } from "@ai-sdk/groq";
+import { defineAgent } from "evo";
+
+const groq = createGroq({
+  apiKey: process.env.GROQ_API_KEY,
+});
 
 export default defineAgent({
-  model: "google/gemini-2.5-flash-lite",
+  model: groq("openai/gpt-oss-20b"),
 });
