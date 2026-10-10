@@ -15,6 +15,7 @@
     "typecheck": "tsc"
   },
   "dependencies": {
+    "@ai-sdk/groq": "^4.0.59",
     "@vercel/connect": "0.4.2",
     "ai": "7.0.112",
     "eve": "0.66.0",
