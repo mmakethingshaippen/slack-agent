@@ -1,5 +1,5 @@
 import { createGroq } from "@ai-sdk/groq";
-import { defineAgent } from "evo";
+import { defineAgent } from "eve";
 
 const groq = createGroq({
   apiKey: process.env.GROQ_API_KEY,
